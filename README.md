@@ -42,13 +42,3 @@ ios-device-utils/
   <next-utility>/    <- utility #2, same self-contained pattern
     ...
 ```
-
-## Adding a new utility (the pattern)
-
-1. Create a new top-level folder named for the tool.
-2. Keep it self-contained (its own README + entry point) so it can
-   be split out later if needed.
-3. Reuse the device-listing / plist-parsing ideas from
-   `battery-health/` first; only extract a shared `common/` library
-   once a second tool actually duplicates the same code.
-4. Add a row to the table above.
